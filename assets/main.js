@@ -4,14 +4,22 @@ $(function() {
 	{
 		var q = $(this).val();
 		if (q == '') {
+			$('.sidebar-pf .nav-category').show();
 			$('.sidebar-pf .nav-category ul li').show();
 		} else {
-			$('.sidebar-pf .nav-category ul li').each(function(k, v) {
-				if ($(this).children('a').text().toLowerCase().indexOf(q.toLowerCase()) > -1) {
-					$(this).show();
-				} else {
-					$(this).hide();
-				}
+			$('.sidebar-pf .nav-category').show();
+			$('.sidebar-pf .nav-category').each(function() {
+				var all = true;
+				$(this).find('ul li').each(function(k, v) {
+					if ($(this).children('a').text().toLowerCase().indexOf(q.toLowerCase()) > -1) {
+						$(this).show();
+						all = false;
+					} else {
+						$(this).hide();
+					}
+				});
+				
+				if(all) $(this).hide();
 			});
 		}
 	}
