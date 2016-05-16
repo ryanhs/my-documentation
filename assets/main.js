@@ -23,6 +23,7 @@ $(function() {
 		var converter = new showdown.Converter(),
 			text = converter.makeHtml(text);
 		$('#documentation-page').html(text);
+		$('#documentation-page pre code').each(function(i, block) { hljs.highlightBlock(block); });
 	});
 	
 	
@@ -69,6 +70,7 @@ function loadRepo() {
 			}
 			
 			$('#documentation-page').html(text);
+			$('#documentation-page pre code').each(function(i, block) { hljs.highlightBlock(block); });
 		});
 	}
 }

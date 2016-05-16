@@ -30,6 +30,13 @@ and add some md files (exp: hello.md), then run fileGenerate / click reload
 for now its support md, html, and img.. but if you get the idea and you can costumize this project, 
 just make your own version :-)
 
+#### installation
+
+oh yeah i almost forgot, because in this project i use 3rd party libraries..
+- you can use bower to install `bower install`
+- and use koala to compile assets/style.less to assets/style.css	
+- for logo, i give you assets/logo-mini.xcf (gimp file) to edit, just simple text
+
 ### BUGS
 
 - 
