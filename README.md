@@ -15,11 +15,6 @@ in php
 php filesGenerate.php
 ```
 
-in javascript/node
-```
-node filesGenerate.js
-```
-
 or you can click "reload" menu in up right, if you run this in "apache+php" environment
 
 ### DEVELOPMENT
