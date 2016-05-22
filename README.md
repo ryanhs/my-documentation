@@ -11,8 +11,13 @@ that file made from filesGenerate.php / filesGenerate.js
 
 after create new file/folder in files directory just run the filesGenerate again, example:
 in php
-```
+```text
 php filesGenerate.php
+```  
+
+in node / js
+```text
+node filesGenerate.js
 ```
 
 or you can click "reload" menu in up right, if you run this in "apache+php" environment
